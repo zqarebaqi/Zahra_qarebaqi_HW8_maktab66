@@ -1,0 +1,126 @@
+@keyframes baresh {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 80vh;
+  }
+}
+
+.ballon {
+  animation: baresh;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  width: 150px;
+  height: 150px;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.giftSame {
+  width: 85px;
+  height: 85px;
+  animation: comeDown;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+.gift {
+  animation-duration: 35s;
+  animation-timing-function: ease-out;
+}
+.gift1 {
+  animation-duration: 20s;
+}
+
+.gift:hover,
+.gift1:hover {
+  transform: scale(2, 2);
+}
+
+@keyframes comeDown {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 80vh;
+  }
+}
+
+@keyframes rotateSnow {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 80vh;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.snowSame {
+  width: 45px;
+  height: 45px;
+  animation: rotateSnow, rotate;
+  animation-iteration-count: infinite;
+}
+.snow {
+  animation-duration: 8s;
+}
+
+.snow1 {
+  animation-duration: 12s;
+}
+
+.socks {
+  width: 60px;
+  height: 60px;
+  animation: socksDance;
+  animation-duration: 28s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes socksDance {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 80vh;
+  }
+}
+
+.tree {
+  animation: consttree;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition: colorchange 2s;
+}
+.tree:hover {
+  background: url("./img/santa2.png");
+  background-repeat: no-repeat;
+}
+
+@keyframes consttree {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 70vh;
+  }
+}
+
+h1 {
+  color: rgb(14, 77, 133);
+}
